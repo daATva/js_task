@@ -1044,3 +1044,37 @@
 
 // alert( sorted ); // CSS, HTML, JavaScript
 // alert( arr ); // HTML, JavaScript, CSS (без изменений)
+
+// /////CALL BACK//////CALL BACK////////CALL BACK////////////CALL BACK/////////
+
+// function sumArray(callback){
+//   const arr = [5 , 1 ,3]
+//   let sum = 0
+//   callback(arr , sum)
+// }
+
+// function check(sum , arr){
+//     sum =  arr.forEach(elem => sum += elem)
+//     console.log(sum)
+// }
+
+// sumArray(check)
+
+function printSum(sum) {
+    sum = 0 
+    for(let key of numbers){
+        sum += key
+    }
+    console.log("Сумма массива:", sum);
+}
+  
+const numbers = [1 , 3 ,4 ,5 , 23]
+
+function calculateSum(numbers, printSum){
+    console.log(numbers)
+    printSum()
+}
+
+calculateSum(numbers, printSum);
+
+
