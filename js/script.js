@@ -1143,16 +1143,25 @@
 // }
   
 
-const string = 'Hi! Hi!! Hi!'
+// const string = 'Hi! Hi!! Hi!'
 
-const splitter = (string.split(''))
+// const splitter = (string.split(''))
 
-let count = 0
+// let count = 0
 
-splitter.forEach(element => {
-  element == '!' ? count++ : element 
-});
+// splitter.forEach(element => {
+//   element == '!' ? count++ : element 
+// });
 
-splitter.join(', ')
-console.log(splitter)
-console.log(count)
+// const finalCount = '!'.repeat(count)
+
+// const newArr = splitter.filter(item => item !== '!')
+
+// return newArr.join('') + finalCount
+
+
+// function isLeapYear(year) {
+//   return (1600 <= year && year <= 4000) && (year % 4 == 0 && year % 100 != 0) || year % 400 == 0  ? true : false  
+// }
+
+// console.log(isLeapYear(2021))
