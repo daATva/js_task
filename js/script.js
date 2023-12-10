@@ -1094,12 +1094,65 @@
   
 //   alert( aclean(arr) );
 
-  let map = new Map();
+  // let map = new Map();
 
-  map.set("name", "John");
+  // map.set("name", "John");
   
-  let keys = Array.from(map.keys());
+  // let keys = Array.from(map.keys());
   
-  keys.push("more");
+  // keys.push("more");
   
-  alert(keys); // name, more
+  // alert(keys); // name, more
+
+// function sumSalaries(salaries){
+//   let summer = 0 
+
+//   for(let sum of Object.values(salaries)){
+//    summer += sum
+//   }
+//   return summer
+// }
+
+// let salaries = {
+//   "John": 100,
+//   "Pete": 300,
+//   "Mary": 250
+// };
+
+// alert( sumSalaries(salaries) ); // 650
+
+// let user = {
+//   name: 'John',
+//   age: 30
+// };
+
+// alert( count(user) ); // 2
+
+// function count(){
+//   return Object.values(user).length
+// }
+
+// function validateUsr(username) {
+//   return username.length >= 4 && username.length <= 16 && (typeof username === 'string' || username.includes('_')) 
+//   && username === username.toLowerCase();
+// }
+
+// function validateUsr(username) {
+//   const regex = /^[a-z0-9_]{4,16}$/;
+//   return regex.test(username);
+// }
+  
+
+const string = 'Hi! Hi!! Hi!'
+
+const splitter = (string.split(''))
+
+let count = 0
+
+splitter.forEach(element => {
+  element == '!' ? count++ : element 
+});
+
+splitter.join(', ')
+console.log(splitter)
+console.log(count)
