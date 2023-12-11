@@ -1165,3 +1165,31 @@
 // }
 
 // console.log(isLeapYear(2021))
+
+
+
+// function removeSmallest(numbers) {
+//   const min = numbers.filter(num => Math.min(num))
+//   return min
+// }
+
+// removeSmallest([1,2,3,4,5])
+
+const numbers = [12 , 2 , 1 , 4 , 5]
+
+
+
+const check =  numbers.indexOf(Math.min(...numbers))
+numbers.splice(check,1)
+newArray
+return numbers
+console.log(del)
+console.log(numbers)
+
+function removeSmallest(numbers) {
+  const min = Math.min(...numbers);
+  const newArray = [...numbers];
+  const index = newArray.indexOf(min);
+  newArray.splice(index, 1);
+  return newArray;
+}
