@@ -1175,21 +1175,116 @@
 
 // removeSmallest([1,2,3,4,5])
 
-const numbers = [12 , 2 , 1 , 4 , 5]
+// const numbers = [12 , 2 , 1 , 4 , 5]
 
 
 
-const check =  numbers.indexOf(Math.min(...numbers))
-numbers.splice(check,1)
-newArray
-return numbers
-console.log(del)
-console.log(numbers)
+// const check =  numbers.indexOf(Math.min(...numbers))
+// numbers.splice(check,1)
+// newArray
+// return numbers
+// console.log(del)
+// console.log(numbers)
 
-function removeSmallest(numbers) {
-  const min = Math.min(...numbers);
-  const newArray = [...numbers];
-  const index = newArray.indexOf(min);
-  newArray.splice(index, 1);
-  return newArray;
-}
+// function removeSmallest(numbers) {
+//   const min = Math.min(...numbers);
+//   const newArray = [...numbers];
+//   const index = newArray.indexOf(min);
+//   newArray.splice(index, 1);
+//   return newArray;
+// }
+
+
+
+// function reduce(fraction) {
+//   let a = fraction[0];
+//   let b = fraction[1];
+
+//   while (b !== 0) {
+//     let remainder = a % b;
+//     a = b;
+//     b = remainder;
+//   }
+
+//   return fraction.map(elem => (elem / a))
+
+// }
+
+// const fraction = [45, 120];
+// console.log(reduce(fraction)); // Выведет 15
+
+// function nthFloyd(n){
+//   row = 0
+//   count = 0
+//   while count < n:
+//       row += 1
+//       count += row
+//   return row
+// }
+
+// function solution(number){
+//   if(number < 0 ){
+//     return 0
+//   } else{
+//     let sum = 0;
+//     for(let i = 0; i< number ; i++){
+//      if (i % 3 == 0 || i % 5 == 0){
+//      sum+=i
+//      } 
+//      }
+//      return sum  
+//   }
+
+//  } 
+
+
+// console.log(solution(100))
+
+// Счастливый билет
+
+// function isHappyTicket(ticket) {
+//   let del = ticket.split('');
+//   let length = del.length;
+//   let mid = Math.floor(length / 2);
+//   let sumLeft = 0;
+//   let sumRight = 0;
+
+//   if (length % 2 !== 0) {
+//     return false;
+//   } else {
+//     for (let i = 0; i < length; i++) {
+//       let el = parseInt(del[i]);
+//       if (i < mid) {
+//         sumLeft += el;
+//       } else {
+//         sumRight += el;
+//       }
+//     }
+//     return sumLeft === sumRight;
+//   }
+// }
+
+// console.log(isHappyTicket('385916')) 
+
+// Инвертированный регистр
+
+// function invertCase(str){
+//   const splitter = str.split('')
+
+//   const newArray = splitter.map(element => {
+//     return element === element.toLowerCase() ? element.toUpperCase() : element.toLowerCase()
+//   });
+
+//   const res = newArray.join('')
+
+//   console.log(res)
+
+// }
+
+// invertCase('Hello, World!')
+// invertCase('I loVe JS')
+
+// Фибоначчи
+
+
+
