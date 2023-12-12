@@ -1315,12 +1315,35 @@
 
 // console.log(isPerfect(6))
 
-let user = {
-  name: "Василий Иванович",
-  age: 35
-};
+// let user = {
+//   name: "Василий Иванович",
+//   age: 35
+// };
 
-let cuser = JSON.parse(JSON.stringify(user))
+// let cuser = JSON.parse(JSON.stringify(user))
 
-console.log(cuser)
+// console.log(cuser)
 
+function sumTo(n){
+  let sum = 0
+  for(let i = 0; i <= n; i++){
+    sum += i
+  }
+  console.log(sum)
+}
+
+sumTo(100)
+
+function sumTo(n) {
+  if (n == 1) return 1;
+  return n + sumTo(n - 1);
+}
+
+sumTo(1)
+
+function factorial(n){
+  if(n == 1 ) return 1
+  return n * factorial(n-1)
+}
+
+console.log(factorial(1))
