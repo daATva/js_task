@@ -1299,21 +1299,28 @@
 
 // console.log(closeCompare(3,5 , 0))
 
-function isPerfect(num) {
-  let sum = 0;
-  for (let i = 1; i <= num; i++) {
-      if(sum != num){
-        sum += i;
-      }
-  }
-  if(num == sum){
-    return true
-  }else{
-    return false
-  }
-}
+// function isPerfect(num) {
+//   let sum = 0;
+//   for (let i = 1; i <= num; i++) {
+//       if(sum != num){
+//         sum += i;
+//       }
+//   }
+//   if(num == sum){
+//     return true
+//   }else{
+//     return false
+//   }
+// }
 
-console.log(isPerfect(6))
+// console.log(isPerfect(6))
 
+let user = {
+  name: "Василий Иванович",
+  age: 35
+};
 
+let cuser = JSON.parse(JSON.stringify(user))
+
+console.log(cuser)
 
