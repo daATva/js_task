@@ -1284,7 +1284,36 @@
 // invertCase('Hello, World!')
 // invertCase('I loVe JS')
 
-// Фибоначчи
+// 12 12 23 ////
+
+
+// function closeCompare(a, b, margin = 0) {
+//   if (Math.abs(a - b) <= margin) {
+//     return 0
+//   } else if (a < b) {
+//     return -1
+//   } else {
+//     return 1
+//   }
+// }
+
+// console.log(closeCompare(3,5 , 0))
+
+function isPerfect(num) {
+  let sum = 0;
+  for (let i = 1; i <= num; i++) {
+      if(sum != num){
+        sum += i;
+      }
+  }
+  if(num == sum){
+    return true
+  }else{
+    return false
+  }
+}
+
+console.log(isPerfect(6))
 
 
 
