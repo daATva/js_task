@@ -1324,26 +1324,103 @@
 
 // console.log(cuser)
 
-function sumTo(n){
-  let sum = 0
-  for(let i = 0; i <= n; i++){
-    sum += i
-  }
-  console.log(sum)
+// function sumTo(n){
+//   let sum = 0
+//   for(let i = 0; i <= n; i++){
+//     sum += i
+//   }
+//   console.log(sum)
+// }
+
+// sumTo(100)
+
+// function sumTo(n) {
+//   if (n == 1) return 1;
+//   return n + sumTo(n - 1);
+// }
+
+// sumTo(1)
+
+// function factorial(n){
+//   if(n == 1 ) return 1
+//   return n * factorial(n-1)
+// }
+
+// console.log(factorial(1))
+
+// 13 12 
+
+// Write a program that outputs the top n elements from a list.
+
+// Example:
+
+// largest(2, [7,6,5,4,3,2,1])
+// => [6,7]
+
+// function largest(n, array) {
+//   let newArray = array.sort((a, b) => b - a);
+//   let topElements = newArray.slice(0, n);
+//   console.log(topElements);
+//   return topElements;
+// }
+
+// largest(2, [7, 6, 5, 4, 3, 2, 1]); // Вывод: [7, 6]
+
+// function largest(n, list) {
+//   // Сортируем список в порядке убывания
+//   list.sort((a, b) => b - a);
+  
+//   // Возвращаем первые n элементов
+//   return list.slice(0, n);
+// }
+
+// console.log(largest(2, [7, 6, 5, 4, 3, 2, 1]).reverse()); // [6, 7]
+
+// Не проходит тесты :-(
+
+
+// function firstReverseTry(arr) {
+//   if (arr.length < 2) {
+//     return arr;
+//   }
+  
+//   [arr[0], arr[arr.length - 1]] = [arr[arr.length - 1], arr[0]];
+  
+//   return arr;
+// }
+
+// console.log(firstReverseTry([1, 2, 3, 4, 5]))
+
+// function fibonacci(n) {
+//   if (n <= 1) {
+//     return n;
+//   } else {
+//     return fibonacci(n - 1) + fibonacci(n - 2);
+//   }
+// }
+
+// const index = parseInt(prompt("Введите индекс числа Фибоначчи: "));
+
+// const start_time = Date.now();
+// const result = fibonacci(index);
+// const end_time = Date.now();
+
+// const execution_time = (end_time - start_time) / 1000;
+
+// console.log("Число Фибоначчи для индекса", index, "равно:", result);
+// console.log("Время выполнения кода:", execution_time, "секунд");
+
+function expressBubble(myArray) {
+  for (let j = myArray.length - 1; j > 0; j--) {
+    for(let i = 0 ; i < j ; i++){
+      if (myArray[i] > myArray[i + 1]) {
+        let temp = myArray[i]
+        myArray[i] = myArray[i+1]
+        myArray[i+1] = temp
+      }
+    }
+  }   
+  return myArray
 }
 
-sumTo(100)
-
-function sumTo(n) {
-  if (n == 1) return 1;
-  return n + sumTo(n - 1);
-}
-
-sumTo(1)
-
-function factorial(n){
-  if(n == 1 ) return 1
-  return n * factorial(n-1)
-}
-
-console.log(factorial(1))
+console.log(expressBubble([1, 4 , 5 ,6  , 3]));
