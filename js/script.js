@@ -1391,36 +1391,38 @@
 
 // console.log(firstReverseTry([1, 2, 3, 4, 5]))
 
-// function fibonacci(n) {
-//   if (n <= 1) {
-//     return n;
-//   } else {
-//     return fibonacci(n - 1) + fibonacci(n - 2);
-//   }
-// }
-
-// const index = parseInt(prompt("Введите индекс числа Фибоначчи: "));
-
-// const start_time = Date.now();
-// const result = fibonacci(index);
-// const end_time = Date.now();
-
-// const execution_time = (end_time - start_time) / 1000;
-
-// console.log("Число Фибоначчи для индекса", index, "равно:", result);
-// console.log("Время выполнения кода:", execution_time, "секунд");
-
-function expressBubble(myArray) {
-  for (let j = myArray.length - 1; j > 0; j--) {
-    for(let i = 0 ; i < j ; i++){
-      if (myArray[i] > myArray[i + 1]) {
-        let temp = myArray[i]
-        myArray[i] = myArray[i+1]
-        myArray[i+1] = temp
-      }
-    }
-  }   
-  return myArray
+function fibonacci(n) {
+  if (n <= 1) {
+    return n;
+  } else {
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  }
 }
 
-console.log(expressBubble([1, 4 , 5 ,6  , 3]));
+const index = parseInt(prompt("Введите индекс числа Фибоначчи: "));
+
+const start_time = Date.now();
+const result = fibonacci(index);
+const end_time = Date.now();
+
+const execution_time = (end_time - start_time) / 1000;
+
+console.log("Число Фибоначчи для индекса", index, "равно:", result);
+console.log("Время выполнения кода:", execution_time, "секунд");
+
+// function expressBubble(myArray) {
+//   for (let j = myArray.length - 1; j > 0; j--) {
+//     for(let i = 0 ; i < j ; i++){
+//       if (myArray[i] > myArray[i + 1]) {
+//         let temp = myArray[i]
+//         myArray[i] = myArray[i+1]
+//         myArray[i+1] = temp
+//       }
+//     }
+//   }   
+//   return myArray
+// }
+
+// console.log(expressBubble([1, 4 , 5 ,6  , 3]));
+
+17/12
