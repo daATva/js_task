@@ -1391,24 +1391,24 @@
 
 // console.log(firstReverseTry([1, 2, 3, 4, 5]))
 
-function fibonacci(n) {
-  if (n <= 1) {
-    return n;
-  } else {
-    return fibonacci(n - 1) + fibonacci(n - 2);
-  }
-}
+// function fibonacci(n) {
+//   if (n <= 1) {
+//     return n;
+//   } else {
+//     return fibonacci(n - 1) + fibonacci(n - 2);
+//   }
+// }
 
-const index = parseInt(prompt("Введите индекс числа Фибоначчи: "));
+// const index = parseInt(prompt("Введите индекс числа Фибоначчи: "));
 
-const start_time = Date.now();
-const result = fibonacci(index);
-const end_time = Date.now();
+// const start_time = Date.now();
+// const result = fibonacci(index);
+// const end_time = Date.now();
 
-const execution_time = (end_time - start_time) / 1000;
+// const execution_time = (end_time - start_time) / 1000;
 
-console.log("Число Фибоначчи для индекса", index, "равно:", result);
-console.log("Время выполнения кода:", execution_time, "секунд");
+// console.log("Число Фибоначчи для индекса", index, "равно:", result);
+// console.log("Время выполнения кода:", execution_time, "секунд");
 
 // function expressBubble(myArray) {
 //   for (let j = myArray.length - 1; j > 0; j--) {
@@ -1425,4 +1425,28 @@ console.log("Время выполнения кода:", execution_time, "сек
 
 // console.log(expressBubble([1, 4 , 5 ,6  , 3]));
 
-17/12
+// 17/12
+
+// function getCount(str) {
+//   const string = str.toLowerCase().split('')
+//   const newArray = string.filter(element => element === 'a' || element === 'e' || element === 'i' || element === 'o' || element === 'u');  
+//   return newArray.length 
+
+// }
+
+// console.log(getCount('yiaeiommmmmu'))
+
+function spinWords(string){
+  const splitter = string.split(' ')
+  if(splitter > 1){
+    splitter.map((el) => {
+      return el.length >= 5 ? el[el.length - 1] + el.slice(1, -1) + el[0] : el;
+    });
+    return splitter
+  }else{
+    const newWord =  string.length >= 5 ? string[string.length - 1] + string.slice(1, -1) + string[0] : string;
+    return newWord
+  }
+}
+
+console.log(spinWords('Welcome'))
