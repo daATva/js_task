@@ -1436,17 +1436,48 @@
 
 // console.log(getCount('yiaeiommmmmu'))
 
-function spinWords(string){
-  const splitter = string.split(' ')
-  if(splitter > 1){
-    splitter.map((el) => {
-      return el.length >= 5 ? el[el.length - 1] + el.slice(1, -1) + el[0] : el;
-    });
-    return splitter
-  }else{
-    const newWord =  string.length >= 5 ? string[string.length - 1] + string.slice(1, -1) + string[0] : string;
-    return newWord
-  }
+// function spinWords(string){
+//   let splitter = string.split(' ')
+//   if(splitter > 1){
+//     splitter = splitter.map((el) => {
+//         return el.length >= 5 ? el[el.length - 1] + el.slice(1, -1) + el[0] : el;
+//       });
+//     return splitter
+//   }else{
+//     const newWord =  string.length >= 5 ? string[string.length - 1] + string.slice(1, -1) + string[0] : string;
+//     return newWord
+//   }
+// }
+
+// console.log(spinWords('Welcome'))
+
+// function spinWords(sentence) {
+//   let words = sentence.split(' ');
+//   let result = [];
+//   for (let word of words) {
+//     if (word.length >= 5) {
+//       result.push(word.split('').reverse().join(''));
+//     } else {
+//       result.push(word);
+//     }
+//   }
+//   return result.join(' ');
+// }
+// console.log(spinWords('1faaaaf6 ddd 555'))
+function findOdd(A) {
+  let count = 0
+  let max = 0
+  let arr = []
+  const newArr = A.filter(el => {
+    if (el = el) {
+      count++;
+      console.log(count);
+
+      return true;
+    } else {
+      return false;
+    }
+  });
 }
 
-console.log(spinWords('Welcome'))
+ findOdd([1 , 2,  3, 3 , 3, 4 , 5 , 6])
