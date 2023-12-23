@@ -1464,20 +1464,54 @@
 //   return result.join(' ');
 // }
 // console.log(spinWords('1faaaaf6 ddd 555'))
-function findOdd(A) {
-  let count = 0
-  let max = 0
-  let arr = []
-  const newArr = A.filter(el => {
-    if (el = el) {
-      count++;
-      console.log(count);
 
-      return true;
-    } else {
-      return false;
-    }
-  });
+// function findOdd(A) {
+//   let count = 0
+//   let max = 0
+//   let arr = []
+//   const newArr = A.filter(el => {
+//     if (el = el) {
+//       count++;
+//       console.log(count);
+
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   });
+// }
+
+//  findOdd([1 , 2,  3, 3 , 3, 4 , 5 , 6])
+
+// function disemvowel(str) {
+//   const vowels = ['a', 'e', 'i', 'o', 'u', ]
+//   const myArray = str.split('')
+//   const filtArray =  myArray.filter(el => !vowels.includes(el.toLowerCase())).join('')
+//   return filtArray
+// }
+// const vowels = 'aeiou';
+
+// function disemvowel(str) {
+//   return str
+//     .split('')
+//     .filter(letter => !vowels.includes(letter.toLowerCase()))
+//     .join('');
+// } 
+
+// const array1 = [1, 2, 3, 4, 5];
+// const array2 = [3, 4, 5, 6, 7];
+
+// const filteredArray = array1.filter(element => !array2.includes(element));
+
+// console.log(filteredArray);
+// console.log(disemvowel("This website is for losers LOL!"));
+
+function squareDigits(num) {
+  const newArray = num.toString().split('');
+  const resultArray = newArray.map(el => parseInt(el) * parseInt(el));
+  return Number(resultArray.join(''));
 }
 
- findOdd([1 , 2,  3, 3 , 3, 4 , 5 , 6])
+console.log(squareDigits(3212));
+
+
