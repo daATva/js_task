@@ -1506,12 +1506,48 @@
 // console.log(filteredArray);
 // console.log(disemvowel("This website is for losers LOL!"));
 
-function squareDigits(num) {
-  const newArray = num.toString().split('');
-  const resultArray = newArray.map(el => parseInt(el) * parseInt(el));
-  return Number(resultArray.join(''));
+// function squareDigits(num) {
+//   const newArray = num.toString().split('');
+//   const resultArray = newArray.map(el => parseInt(el) * parseInt(el));
+//   return Number(resultArray.join(''));
+// }
+
+// console.log(squareDigits(3212));
+
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+
+// function inBetween(a,b){
+//       return function(x){
+//         return x>= a && x<= b
+//     }
+//   }
+
+// function inArray(arr){
+//       return function(x){
+//         return arr.includes(x)
+//     }
+//   }
+
+// console.log(arr.filter(inBetween(3,6)))
+
+// function makeArmy() {
+//   let shooters = [];
+
+//   let i = 0;
+//   while (i < 10) {
+//   let j = i
+//       let shooter = function() { 
+//         alert( j )
+//       };
+//     shooters.push(shooter)
+//     i++
+//   }
+
+//   return shooters
+// }
+
+// let army = makeArmy()
+
+function sum(a){
+  
 }
-
-console.log(squareDigits(3212));
-
-
