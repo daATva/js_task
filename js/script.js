@@ -1548,23 +1548,37 @@
 
 // let army = makeArmy()
 
-function sum(a){
+// function sum(a){
   
+// }
+
+// function f() {
+//   try {
+//     alert('начало');
+//     throw new Error("ошибка");
+//   } catch (e) {
+//     // ...
+//     if("не могу обработать ошибку") {
+//       throw e;
+//     }
+
+//   } finally {
+//     alert('очистка!')
+//   }
+// }
+
+// f(); // очистка!
+
+function highAndLow(numbers) {
+  const numArray = numbers.split(" ");
+
+  const parsedNumArray = numArray.map(Number);
+
+  const maxNum = Math.max(...parsedNumArray);
+  const minNum = Math.min(...parsedNumArray);
+
+  const result = `${maxNum} ${minNum}`;
+
+  return result;
 }
 
-function f() {
-  try {
-    alert('начало');
-    throw new Error("ошибка");
-  } catch (e) {
-    // ...
-    if("не могу обработать ошибку") {
-      throw e;
-    }
-
-  } finally {
-    alert('очистка!')
-  }
-}
-
-f(); // очистка!
