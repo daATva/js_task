@@ -1582,24 +1582,52 @@
 //   return result;
 // }
 
-const names = ["Jacob", "Alex", "Alex", "Alex"] 
+// const names = ["Jacob", "Alex", "Alex", "Alex"] 
 
-function likes(names) {
-  if (names.length === 0) {
-    return 'no one likes this';
-  }
-  if (names.length === 1) {
-    return `${names[0]} likes this`;
-  }
-  if (names.length === 2) {
-    return `${names[0]} and ${names[1]} like this`;
-  }
-  if (names.length === 3) {
-    return `${names[0]}, ${names[1]} and ${names[2]} like this`;
-  }
-  if (names.length >= 4) {
-    return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
+// function likes(names) {
+//   if (names.length === 0) {
+//     return 'no one likes this';
+//   }
+//   if (names.length === 1) {
+//     return `${names[0]} likes this`;
+//   }
+//   if (names.length === 2) {
+//     return `${names[0]} and ${names[1]} like this`;
+//   }
+//   if (names.length === 3) {
+//     return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+//   }
+//   if (names.length >= 4) {
+//     return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
+//   }
+// }
+
+// console.log(likes(names))
+
+function humanReadable(seconds) {
+  if (seconds >= 359999) {
+    return '99:59:59';
+  } else {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds - hours * 3600) / 60);
+    const remainingSeconds = seconds % 60;
+
+    let Hours = hours;
+    let Minutes = minutes;
+    let Seconds = remainingSeconds;
+
+    if (hours < 10) {
+      Hours = '0' + hours;
+    }
+    if (minutes < 10) {
+      Minutes = '0' + minutes;
+    }
+    if (remainingSeconds < 10) {
+      Seconds = '0' + remainingSeconds;
+    }
+
+    return `${Hours}:${Minutes}:${Seconds}`;
   }
 }
 
-console.log(likes(names))
+console.log(humanReadable(3599))
